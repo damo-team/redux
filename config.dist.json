@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "damo-redux",
+  "main": "./src/index",
+  "output": {
+    "version": "",
+    "file": "none",
+    "path": "dist",
+    "app": "redux",
+    "library": "rxRedux",
+    "libraryTarget": "umd"
+  },
+  "jsx": true,
+  "externals": [
+    "react",
+    "react-dom",
+    "react-redux",
+    "react-router",
+    "redux",
+    "redux-logger",
+    "redux-thunk",
+    "rxjs/"
+  ],
+  "noUglify": true,
+  "devtool": "",
+  "partition": {
+    "NODE_ENV": "production"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "name": "damo-redux",
+  "index": "./demo/index.html",
+  "main": "./demo/pages/real-world/index.js",
+  "server": {
+    "host": "http://local.dtboost.biz.aliyun.test:8081"
+  },
+  "output": {
+    "version": "",
+    "path": "dist",
+    "app": "redux",
+    "library": "rxRedux",
+    "libraryTarget": "umd"
+  },
+  "jsx": true,
+  "vendors": [
+    "react",
+    "react-dom",
+    "react-redux",
+    "react-router",
+    "redux",
+    "redux-logger",
+    "redux-thunk",
+    "rxjs"
+  ],
+  "noUglify": true,
+  "devtool": "#cheap-source-map",
+  "partition": {
+    "NODE_ENV": "development"
+  },
+  "proxy": [{
+    "host": "http://dev.dtboost.biz.aliyun.test/",
+    "routes": [
+      "/api*"
+    ]
+  }]
+}
